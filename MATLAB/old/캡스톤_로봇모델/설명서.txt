@@ -1,0 +1,20 @@
+params.m : 예제 이것저것에서 떼오느라 여러가지 변수들이 섞여있어서 한 파일로 통합함.
+모델 실행 전에 반드시 실행할 것
+
+robot3.slx : 화려한 밸런싱 로봇 모델(메인)
+
+// 기타
+balancebot_simple.slx : python으로 했던 간단한 밸런싱 로봇 원본
+balancebot_simple_custom.slx : 바퀴를 굴리기 위해 angle input을 주기 위해 revolute joint 변경한 것
+rlWalkingBipedRobot.slx : 두발로봇 예제 모델
+sm_vehicle_slalom.slx : 자동차 예제 모델
+--------------------------------------------------------------
+
+자동차 모델 메인 가운데에 보면 Planar Joint라는 조인트가 있는데,
+이름처럼 이게 모델을 이동시키는 핵심 요소인 것 같음.
+
+Spatial Contact Force는 바퀴에 적용해서 지면과 상호작용을 하고 수직항력과 마찰력을 출력
+
+로봇이 기울어지도록 어떻게 설정할지도 고민(이건 우선 이동문제가 해결된 후)
+
+(Wheel and Axle은 잘 모르겠음...)
